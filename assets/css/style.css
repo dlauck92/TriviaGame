@@ -4,6 +4,22 @@ body {
   text-align: center;
 }
 
-.option{
+.option {
   margin: 15px;
 }
+
+h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 2px;
+}
+
+#choices {
+  position: relative;
+  margin: auto;
+}
+
+.jumbotron {
+  border: 5px solid black;
+}
+
