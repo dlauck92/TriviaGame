@@ -150,9 +150,9 @@ timerId : "",
     // the answer to the current question being asked
     var currentAnswer = Object.values(trivia.answers)[trivia.currentSet];
     
-    // if the text of the option picked matches the answer of the current question, increment correct
+    // Correct guess
     if($(this).text() === currentAnswer){
-      // turn button green for correct
+      // Button turns green on correct guess
       $(this).addClass('btn-success').removeClass('btn-info');
       
       trivia.correct++;
@@ -160,7 +160,7 @@ timerId : "",
       resultId = setTimeout(trivia.guessResult, 1000);
       $('#results').html('<h3>Correct Answer!</h3>');
     }
-    // Incorrect answer
+    // Incorrect guess
     else{
       // Button turns red on wrong guess
       $(this).addClass('btn-danger').removeClass('btn-info');
@@ -182,7 +182,7 @@ timerId : "",
     $('.option').remove();
     $('#results h3').remove();
     
-    // begin next question
+    // Populate next question
     trivia.nextQuestion();
      
   }
